@@ -178,6 +178,7 @@ class _OTPTextFieldState extends State<OTPTextField> {
             right: isLast ? 0 : widget.spaceBetween,
           ),
       child: TextField(
+        key: new Key("otpField"+index.toString()),
         controller: _textControllers[index],
         keyboardType: widget.keyboardType,
         textCapitalization: widget.textCapitalization,
